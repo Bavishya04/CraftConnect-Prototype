@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftConnect Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="CraftConnect Logo in Vibrant Red.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <img src="CraftConnect Logo in Vibrant Red.png" alt="CraftConnect Logo" class="logo">
+        <div class="header-text">
+            <h1>CraftConnect</h1>
+            <p>Empowering Local Artisans with AI & AR</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Upload Product -->
+        <div class="upload-section">
+            <label for="productUpload">Upload Product Image:</label>
+            <input type="file" id="productUpload" accept="image/*">
+        </div>
+
+        <!-- Product Display -->
+        <div class="product-section">
+            <img id="productImage" src="" alt="Your Product" style="display:none;">
+            <div id="caption" class="caption"></div>
+            <div class="buttons">
+                <button id="tryOnBtn" style="display:none;">Try On</button>
+                <button id="addToCartBtn" style="display:none;">Add to Cart</button>
+                <button id="removeBtn" style="display:none;">Remove Product</button>
+            </div>
+            <div id="cartMessage" class="cart-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 CraftConnect | Hackathon Prototype</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
